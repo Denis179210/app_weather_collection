@@ -1,0 +1,25 @@
+   <table class="city-list table table-bordered text-center">
+        <tr>
+            <th>#</th>
+            <th>ID</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>#</th>
+        </tr>
+        <tr ng-repeat="weatherItem in weatherCollection">
+            <td>{{$index + 1}}</td>
+            <td>{{weatherItem.id}}</td>
+            <td>{{weatherItem.name}}</td>
+            <td>{{weatherItem.sys.country}}</td>
+            <td class="text-center"><button class="btn btn-sm btn-outline-danger" ng-click="removeCity($event, weatherItem, $index)">del</button></td>
+        </tr>
+    </table>
+    <div class="text-center"><button class="btn btn-outline-success" ng-click="toFormDataCollection()">add City</button></div>
+
+    <hr>
+
+    <div class="text-center">
+        <a href="/city" class="btn btn-primary">REST API task( City+CountryCode )</a>
+        <a href="/country" class="btn btn-danger">REST API task( CountryCode only )</a>
+    </div>
+    

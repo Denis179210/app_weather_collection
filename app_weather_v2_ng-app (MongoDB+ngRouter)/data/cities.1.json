@@ -1,0 +1,31 @@
+{"cities" : [
+    {
+        "id" : "01",
+        "city" : "dnipro",
+        "countryCode" : "ua"
+    },{
+        "id" : "02",
+        "city" : "kyiv",
+        "countryCode" : "ua"
+    },{
+        "id" : "03",
+        "city" : "london",
+        "countryCode" : "gb"
+    },{
+        "id" : "04",
+        "city" : "new york",
+        "countryCode" : "us"
+    },{
+        "id" : "05",
+        "city" : "toronto",
+        "countryCode" : "ca"
+    },{
+        "id" : "06",
+        "city" : "tokyo",
+        "countryCode" : "ja"
+    },{
+        "id" : "07",
+        "city" : "moscow",
+        "countryCode" : "ru"
+    }
+]}  

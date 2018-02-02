@@ -1,0 +1,19 @@
+<table class="city-list table table-bordered text-center">
+        <tr>
+            <th>#</th>
+            <th>ID</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>#</th>
+        </tr>
+        <tr ng-repeat="city in cities">
+            <td>{{$index + 1}}</td>
+            <td>{{city._id}}</td>
+            <td>{{city.city}}</td>
+            <td>{{city.countryCode}}</td>
+            <td class="text-center">
+                <!-- <button class="btn btn-sm btn-outline-danger" ng-click="removeCity($event, weatherItem, $index)">del</button> -->
+                <a class="btn btn-sm btn-outline-info" href="/city/edit/{{city._id}}">Edit</a>
+            </td>
+        </tr>
+</table>

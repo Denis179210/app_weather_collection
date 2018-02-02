@@ -1,0 +1,16 @@
+<table class="city-list table table-bordered text-center">
+    <tr>
+        <th>#</th>
+        <th>ID</th>
+        <th>Country</th>
+        <th>#</th>
+    </tr>
+    <tr ng-repeat="country in countries">
+        <td>{{$index + 1}}</td>
+        <td>{{country.id}}</td>
+        <td>{{country.countryCode}}</td>
+        <td class="text-center">
+            <a class="btn btn-sm btn-outline-info" href="/country/edit/{{country.id}}">Edit</a>
+        </td>
+    </tr>
+</table>

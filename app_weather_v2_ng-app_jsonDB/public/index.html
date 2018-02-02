@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="weatherApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <base href="/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div ng-view></div>
+    <hr>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-route.min.js"></script>
+    <script src="common.js" class="entry-point"></script>
+    <script src="/config/appRouteConfig.js"></script>
+    <script src="/city_list/cityListController.js"></script>
+    <script src="/aditional_data_form/formController.js"></script>
+    <script src="/cities/citiesController.js"></script>
+    <script src="/editCity/editCityController.js"></script>
+    <script src="/countries/countriesController.js"></script>
+    <script src="/editCountry/editCountryController.js"></script>
+</body>
+</html>
+
